@@ -1,0 +1,16 @@
+
+.navbar-bottom{
+    .collapse{
+        .navbar-nav{
+            .nav-item{
+                display: flex;
+                a{
+                    display: flex;
+                }
+                .dropdown-menu{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+
+/*start style section footer*/
+footer{
+    .Follow{
+        .bord-bot{
+            @media (max-width:575px){
+                top: 70px;
+                width: 85%;
+            }
+        }
+    }
+    .footer-body{
+        ul {
+            margin-left: 20px;
+        }
+        h3{
+            .bord-bot{
+                @media (max-width:575px){
+                    left:42%;
+                }
+            }
+        }
+    }
+}
+/*end style section footer*/
+
+
+
+footer{
+    .footer-body{
+        h3{
+            .bord-bot{
+                @media (max-width:400px) {
+                    left: 38%;
+                }
+            }
+        }
+        .site-map,.Serv{
+            ul{
+                @media (max-width:400px) {
+                    padding-left: 15px;
+                }
+
+            }
+        }
+    }
+  
+}
+/*end style section footer*/

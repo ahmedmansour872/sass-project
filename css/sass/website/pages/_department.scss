@@ -1,0 +1,262 @@
+.head{
+    background:url(../images/image-overlay.jpg) no-repeat center center fixed;
+    min-height: 300px;
+    @include perfixer(background-size,cover,webkit moz);
+    position: relative;
+    .overlay{
+        background-color:rgba(#000000, .7) ;
+        @include overlay;
+    }
+
+    .breadcrumb{
+        position: relative;
+        z-index: 99;
+        background-color: transparent;
+        font-size: 30px;
+        top: 100px;
+        left: 20px;
+        li{
+            a{
+                color: $letterColor;
+                text-decoration: none;
+            }  
+            &.active a{
+                color: $mainColor;
+            } 
+        }
+    }
+}
+
+
+/*start style section our department*/
+
+.our-department{
+    padding: 40px 0;
+    background-color: rgba($secondeColor, .05);
+    h3{
+        display: flex;
+        position: relative;
+        margin-bottom: 50px;
+        span{
+            color: $mainColor;
+        }
+        .bord-bot{
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: $mainColor;
+            z-index: 9999;   
+        }
+    }
+    .card{
+        margin-bottom: 30px;
+        &:hover{
+            @include perfixer(transition,all .4s ease-in-out ,webkit moz o); 
+            @include perfixer(box-shadow,(3px 5px 17px rgb(172, 172, 172),
+            -3px -5px 17px rgb(172, 172, 172)),webkit moz o); 
+            margin-top: -20px;
+        }
+        &:hover .images .overlay{
+            @include perfixer(transition,all .4s ease-in-out ,webkit moz o); 
+            @include overlay;
+            background-color: rgba(#000, 0.4);
+        }
+        .images{
+            position: relative;    
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 150px;
+            }
+        }
+        .card-body{
+            h5{
+                width: 100%;
+                background-color: $mainColor;
+                color: $whiteColor;
+                padding: 5px;
+            }
+            a{
+                @include perfixer(transition,all .4s ease-in-out ,webkit moz o); 
+                background-color: $whiteColor;
+                color: $mainColor;
+                border: 1px solid $mainColor;
+                &:hover{
+                    background-color: $mainColor;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}
+
+
+/*end style section our department*/
+
+.pag{
+    background-color: rgba($secondeColor, .05);
+    padding-bottom: 40px;
+    .pagination{
+        justify-content: center;
+        margin: auto;
+        li{
+            font-size: 25px;
+        }
+    }
+}
+
+/*start style section spinner*/
+
+body{
+    position: relative;
+}
+
+.posit{
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    .spinner{
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        div{
+            position: absolute;
+            border-radius: 50%;
+       }
+        .one{
+            top: 150px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            border: 2px solid $mainColor;
+           @include perfixer(animation,top-down 2s ease-in-out infinite,webkit moz o);
+        }
+        .two{
+            top: 142px;
+            left: -8px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.1s ease-in-out infinite,webkit moz o);
+        }
+        .three{
+            top: 134px;
+            left: -15px;
+            width: 35px;
+            height: 35px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.2s ease-in-out infinite,webkit moz o);
+        }
+        .four{
+            top: 129px;
+            left: -20px;
+            width: 45px;
+            height: 45px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.3s ease-in-out infinite,webkit moz o);
+        }
+        .five{
+            top: 124px;
+            left: -25px;
+            width: 55px;
+            height: 55px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.4s ease-in-out infinite,webkit moz o);
+        }
+        .six{
+            top: 119px;
+            left: -30px;
+            width: 65px;
+            height: 65px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.5s ease-in-out infinite,webkit moz o);
+        }
+        .seven{
+            top: 114px;
+            left: -35px;
+            width: 75px;
+            height: 75px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.6s ease-in-out infinite,webkit moz o);
+        }
+        .eight{
+            top: 109px;
+            left: -40px;
+            width: 85px;
+            height: 85px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.7s ease-in-out infinite,webkit moz o);
+        }
+        .nigh{
+            top: 104px;
+            left: -45px;
+            width: 95px;
+            height: 95px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.8s ease-in-out infinite,webkit moz o);
+        }
+        .ten{
+            top: 99px;
+            left: -50px;
+            width: 105px;
+            height: 105px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.9s ease-in-out infinite,webkit moz o);
+        }
+    }
+}
+
+@include keyfram(top-down){
+    0%{
+        top: 150px;
+    }
+    50%{
+        top: -100px;
+    }
+    100%{
+        top: 150px;
+    }
+
+}
+
+/*end style section spinner*/
+
+
+/*start style section scroll-to-top*/
+
+.scroll{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: $whiteColor;
+    border: 1px solid $mainColor;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    z-index: 99999;
+    cursor: pointer;
+    @include perfixer(transition,all .4S ease-in-out,webkit moz o);
+    i{
+        color: $mainColor;
+    }
+    &:hover{
+        background-color: $mainColor;
+        @include perfixer(box-shadow,(1px 1px 10px rgba($mainColor,0.5), -1px -1px 10px rgba($mainColor,0.7)),webkit moz o); 
+    }
+    &:hover i{
+        color: $whiteColor;
+    }
+}
+
+/*end style section scroll-to-top*/

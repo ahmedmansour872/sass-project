@@ -1,0 +1,460 @@
+.login {
+  background: url(../images/CSslideshowCyber.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 40px 0;
+}
+.login h1 {
+  color: #007bff;
+  font-size: 3em;
+}
+.login .tras {
+  -webkit-box-shadow: 3px 4px 15px rgba(255, 255, 255, 0.5), -3px -4px 15px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 3px 4px 15px rgba(255, 255, 255, 0.5), -3px -4px 15px rgba(255, 255, 255, 0.5);
+  -o-box-shadow: 3px 4px 15px rgba(255, 255, 255, 0.5), -3px -4px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 4px 15px rgba(255, 255, 255, 0.5), -3px -4px 15px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  width: 60%;
+  padding: 30px 0;
+  border: 2px solid #FFF;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+.login .tras form {
+  width: 90%;
+  margin: auto;
+}
+.login .tras form img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  margin-bottom: 20px;
+}
+.login .tras form h2 {
+  color: #FFF;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.login .tras form .username, .login .tras form .password {
+  background-color: #FFF;
+  margin-bottom: 20px;
+  border: 2px solid #FFF;
+}
+.login .tras form .username input, .login .tras form .password input {
+  background: transparent;
+  width: 93%;
+  border: none;
+  height: 100%;
+  outline: none;
+}
+@media (min-width: 776px) and (max-width: 991px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 90%;
+  }
+}
+@media (min-width: 576px) and (max-width: 775px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 87%;
+  }
+}
+@media (max-width: 575px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 84%;
+  }
+}
+@media (max-width: 400px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 77%;
+  }
+}
+.login .tras form .username i, .login .tras form .password i {
+  font-size: 20px;
+  padding-left: 5px;
+  border-left: 1px solid #999;
+}
+.login .tras form .check {
+  background-color: transparent;
+  border: none;
+}
+.login .tras form .check input {
+  display: none;
+}
+.login .tras form .check label {
+  font-size: 20px;
+  float: left;
+  margin-top: -10px;
+  margin-left: 40px;
+  color: #FFF;
+  position: relative;
+}
+@media (min-width: 576px) and (max-width: 775px) {
+  .login .tras form .check label {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 575px) {
+  .login .tras form .check label {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .login .tras form .check label {
+    margin-left: 30px;
+  }
+}
+.login .tras form .check label span {
+  position: absolute;
+  top: 7px;
+  left: -30px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #007bff;
+}
+.login .tras form .check input[type="checkbox"]:checked + label span:first-child:before {
+  content: "";
+  background: url(../images/tick-2.png) no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.login .tras form .check a {
+  float: right;
+  margin-top: -5px;
+  color: #FFF;
+}
+@media (min-width: 576px) and (max-width: 775px) {
+  .login .tras form .check a {
+    text-align: center;
+    margin-right: 55px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .login .tras form .check a {
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .login .tras form .check a {
+    margin-left: 30px;
+  }
+}
+.login .tras form button {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 22px;
+  padding: 0;
+  border: none;
+}
+.login .tras form button a {
+  font-size: 22px;
+  border: 2px solid #007bff;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #007bff;
+}
+.login .tras form .social {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.login .tras form .social p {
+  color: #FFF;
+}
+.login .tras form .social .icon i {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  font-size: 25px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  margin-left: 20px;
+}
+.login .tras form .social .icon i:hover, .login .tras form .social .icon i:first-child:hover {
+  background-color: #007bff;
+}
+.login .tras form .social .icon i:last-child:hover {
+  background-color: #ea4335;
+}
+.login .tras form h4 {
+  color: #FFF;
+  display: inline-block;
+  margin-right: 8px;
+}
+.login .tras form .fa-angle-double-right, .login .tras form .fa-angle-double-left {
+  color: #FFF;
+  margin-bottom: -15px;
+}
+.login .tras form .register {
+  color: #007bff;
+  font-size: 25px;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+/*end style section our department*/
+.pag {
+  background-color: rgba(37, 53, 98, 0.05);
+  padding-bottom: 40px;
+}
+.pag .pagination {
+  justify-content: center;
+  margin: auto;
+}
+.pag .pagination li {
+  font-size: 25px;
+}
+
+/*start style section spinner*/
+body {
+  position: relative;
+}
+
+.posit {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.posit .spinner {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+.posit .spinner div {
+  position: absolute;
+  border-radius: 50%;
+}
+.posit .spinner .one {
+  top: 150px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s ease-in-out infinite;
+  -moz-animation: top-down 2s ease-in-out infinite;
+  -o-animation: top-down 2s ease-in-out infinite;
+  animation: top-down 2s ease-in-out infinite;
+}
+.posit .spinner .two {
+  top: 142px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.1s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.1s ease-in-out infinite;
+  -o-animation: top-down 2s 0.1s ease-in-out infinite;
+  animation: top-down 2s 0.1s ease-in-out infinite;
+}
+.posit .spinner .three {
+  top: 134px;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.2s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.2s ease-in-out infinite;
+  -o-animation: top-down 2s 0.2s ease-in-out infinite;
+  animation: top-down 2s 0.2s ease-in-out infinite;
+}
+.posit .spinner .four {
+  top: 129px;
+  left: -20px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.3s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.3s ease-in-out infinite;
+  -o-animation: top-down 2s 0.3s ease-in-out infinite;
+  animation: top-down 2s 0.3s ease-in-out infinite;
+}
+.posit .spinner .five {
+  top: 124px;
+  left: -25px;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.4s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.4s ease-in-out infinite;
+  -o-animation: top-down 2s 0.4s ease-in-out infinite;
+  animation: top-down 2s 0.4s ease-in-out infinite;
+}
+.posit .spinner .six {
+  top: 119px;
+  left: -30px;
+  width: 65px;
+  height: 65px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.5s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.5s ease-in-out infinite;
+  -o-animation: top-down 2s 0.5s ease-in-out infinite;
+  animation: top-down 2s 0.5s ease-in-out infinite;
+}
+.posit .spinner .seven {
+  top: 114px;
+  left: -35px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.6s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.6s ease-in-out infinite;
+  -o-animation: top-down 2s 0.6s ease-in-out infinite;
+  animation: top-down 2s 0.6s ease-in-out infinite;
+}
+.posit .spinner .eight {
+  top: 109px;
+  left: -40px;
+  width: 85px;
+  height: 85px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.7s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.7s ease-in-out infinite;
+  -o-animation: top-down 2s 0.7s ease-in-out infinite;
+  animation: top-down 2s 0.7s ease-in-out infinite;
+}
+.posit .spinner .nigh {
+  top: 104px;
+  left: -45px;
+  width: 95px;
+  height: 95px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.8s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.8s ease-in-out infinite;
+  -o-animation: top-down 2s 0.8s ease-in-out infinite;
+  animation: top-down 2s 0.8s ease-in-out infinite;
+}
+.posit .spinner .ten {
+  top: 99px;
+  left: -50px;
+  width: 105px;
+  height: 105px;
+  border: 2px solid #007bff;
+  -webkit-animation: top-down 2s 0.9s ease-in-out infinite;
+  -moz-animation: top-down 2s 0.9s ease-in-out infinite;
+  -o-animation: top-down 2s 0.9s ease-in-out infinite;
+  animation: top-down 2s 0.9s ease-in-out infinite;
+}
+
+@-webkit-keyframes top-down {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+@-moz-keyframes top-down {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+@keyframes top-down {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+/*end style section spinner*/
+@media (min-width: 776px) and (max-width: 991px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 90%;
+  }
+}
+@media (min-width: 576px) and (max-width: 775px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 87%;
+  }
+}
+@media (max-width: 575px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 84%;
+  }
+}
+@media (max-width: 400px) {
+  .login .tras form .username input, .login .tras form .password input {
+    width: 77%;
+  }
+}
+.login .tras form .username i, .login .tras form .password i {
+  padding-left: 0;
+  border-left: none;
+  padding-right: 5px;
+  border-right: 1px solid #999;
+}
+@media (min-width: 576px) and (max-width: 775px) {
+  .login .tras form .check label {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 575px) {
+  .login .tras form .check label {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .login .tras form .check label {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 775px) {
+  .login .tras form .check a {
+    text-align: center;
+    margin-right: 55px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .login .tras form .check a {
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .login .tras form .check a {
+    margin-left: 30px;
+  }
+}
+
+/*# sourceMappingURL=login_rtl.css.map */

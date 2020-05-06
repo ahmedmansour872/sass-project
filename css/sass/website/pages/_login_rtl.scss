@@ -1,0 +1,58 @@
+.login{
+    .tras{
+        form{
+            .username,.password{
+                input{
+                    @media (min-width:776px) and (max-width:991px) {
+                        width: 90%;
+                    }
+                    @media (min-width:576px) and (max-width:775px) {
+                        width: 87%;
+                    }
+                    @media (max-width:575px) {
+                        width: 84%;
+                    }
+                    @media (max-width:400px) {
+                        width: 77%;
+                    }
+                }
+                i{
+                    padding-left: 0;
+                    border-left: none;   
+                    padding-right: 5px;
+                    border-right: 1px solid $letterColor;   
+                }
+            }
+            .check{
+                label{
+                    @media (min-width:576px) and (max-width:775px) {
+                       text-align: center;
+                       margin-left: 70px;
+                    }
+                    @media (max-width:575px) {
+                        text-align: center;
+                        margin-left: 70px;
+                    }
+                    @media (max-width:400px) {
+                        margin-left: 30px;
+                    }
+                }
+                a{
+                    @media (min-width:576px) and (max-width:775px) {
+                        text-align: center;
+                        margin-right: 55px;
+                        margin-bottom: 15px;
+                    }
+                    @media (max-width:575px) {
+                        text-align: center;
+                        margin-right: 40px;
+                        margin-bottom: 15px;
+                    }
+                    @media (max-width:400px) {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

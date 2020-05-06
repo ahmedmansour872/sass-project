@@ -1,0 +1,332 @@
+.head{
+    background:url(../images/image-overlay.jpg) no-repeat center center fixed;
+    min-height: 300px;
+    @include perfixer(background-size,cover,webkit moz);
+    position: relative;
+    .overlay{
+        background-color:rgba(#000000, .7) ;
+        @include overlay;
+    }
+
+    .breadcrumb{
+        position: relative;
+        z-index: 99;
+        background-color: transparent;
+        font-size: 30px;
+        top: 100px;
+        left: 20px;
+        li{
+            a{
+                color: $letterColor;
+                text-decoration: none;
+            }  
+            &.active a{
+                color: $mainColor;
+            } 
+        }
+    }
+}
+
+.main-collapse{
+    padding: 40px 0;
+    .card{
+        h2{
+            display: flex;
+            button{
+                font-size: 22px;
+                text-decoration: none;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+/*start style section about*/
+
+.about{
+    padding: 40px 0;
+    
+    .card{
+        margin-bottom: 30px;
+        @include perfixer(transition,all .4S ease-in-out,webkit moz o);
+       i{
+            margin-bottom: 15px;
+            &:hover{
+                @include perfixer(animation,sizing 1S ease-in-out infinite,webkit moz o);
+            }
+        }        
+        h5{
+            font-size: 25px;
+            font-weight: bold;
+            color: $secondeColor;
+        } 
+        p{
+            color: $letterColor;
+        }
+        &:hover{
+            @include perfixer(box-shadow,(3px 5px 17px rgb(231, 231, 231),
+            -3px -5px 17px rgb(231, 231, 231)),webkit moz o); 
+            margin-top: -20px;     
+        }
+    }
+}
+
+@include keyfram(sizing){
+    0%{
+        @include perfixer(transform,scale(1),webkit moz o);
+    }
+    50%{
+        @include perfixer(transform,scale(1.2),webkit moz o);
+   
+    }
+    100%{
+        @include perfixer(transform,scale(1),webkit moz o);
+    }
+}
+
+/*end style section about*/
+
+
+/*end style section our-status*/
+
+.our-status{
+    @include perfixer(background-size,cover,webkit moz o);
+    padding: 40px 0;
+    h3{
+        position: relative;
+        margin-bottom: 50px;
+        z-index: 1;
+        color: $whiteColor;
+        font-size: 40px;
+        span{
+            color: $mainColor;
+        }
+        .bord-bot{
+            position: absolute;
+            top: 55px;
+            left: 40%;
+            width: 120px;
+            height: 2px;
+            background-color: $mainColor;
+        }
+    }
+    .info{
+        overflow: hidden;
+        background-color: rgba(#000000, .8);
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        .icon{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border:3px solid $mainColor;
+            overflow: hidden;
+            margin: auto;
+            line-height: 85px;
+            text-align: center;
+            i{
+                color: $secondeColor;
+                width: 100%;
+                height: 100%;
+                color: $whiteColor;
+            }
+        }
+        .number{
+            font-size: 35px;
+            margin-top: 20px;
+            color: $letterColor;
+            text-align: center;
+        }
+        .pro{
+            margin-top: -10px;
+            font-size: 35px;
+            color: $mainColor;
+            text-align: center;
+        }
+    }
+}
+
+/*end style section our-status*/
+
+
+/*end style section our department*/
+
+.pag{
+    background-color: rgba($secondeColor, .05);
+    padding-bottom: 40px;
+    .pagination{
+        justify-content: center;
+        margin: auto;
+        li{
+            font-size: 25px;
+        }
+    }
+}
+
+/*start style section spinner*/
+
+body{
+    position: relative;
+}
+
+.posit{
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    .spinner{
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        div{
+            position: absolute;
+            border-radius: 50%;
+       }
+        .one{
+            top: 150px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            border: 2px solid $mainColor;
+           @include perfixer(animation,top-down 2s ease-in-out infinite,webkit moz o);
+        }
+        .two{
+            top: 142px;
+            left: -8px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.1s ease-in-out infinite,webkit moz o);
+        }
+        .three{
+            top: 134px;
+            left: -15px;
+            width: 35px;
+            height: 35px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.2s ease-in-out infinite,webkit moz o);
+        }
+        .four{
+            top: 129px;
+            left: -20px;
+            width: 45px;
+            height: 45px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.3s ease-in-out infinite,webkit moz o);
+        }
+        .five{
+            top: 124px;
+            left: -25px;
+            width: 55px;
+            height: 55px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.4s ease-in-out infinite,webkit moz o);
+        }
+        .six{
+            top: 119px;
+            left: -30px;
+            width: 65px;
+            height: 65px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.5s ease-in-out infinite,webkit moz o);
+        }
+        .seven{
+            top: 114px;
+            left: -35px;
+            width: 75px;
+            height: 75px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.6s ease-in-out infinite,webkit moz o);
+        }
+        .eight{
+            top: 109px;
+            left: -40px;
+            width: 85px;
+            height: 85px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.7s ease-in-out infinite,webkit moz o);
+        }
+        .nigh{
+            top: 104px;
+            left: -45px;
+            width: 95px;
+            height: 95px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.8s ease-in-out infinite,webkit moz o);
+        }
+        .ten{
+            top: 99px;
+            left: -50px;
+            width: 105px;
+            height: 105px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.9s ease-in-out infinite,webkit moz o);
+        }
+    }
+}
+
+@include keyfram(top-down){
+    0%{
+        top: 150px;
+    }
+    50%{
+        top: -100px;
+    }
+    100%{
+        top: 150px;
+    }
+
+}
+
+/*end style section spinner*/
+
+
+/*start style section scroll-to-top*/
+
+.scroll{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: $whiteColor;
+    border: 1px solid $mainColor;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    z-index: 99999;
+    cursor: pointer;
+    @include perfixer(transition,all .4S ease-in-out,webkit moz o);
+    i{
+        color: $mainColor;
+    }
+    &:hover{
+        background-color: $mainColor;
+        @include perfixer(box-shadow,(1px 1px 10px rgba($mainColor,0.5), -1px -1px 10px rgba($mainColor,0.7)),webkit moz o); 
+    }
+    &:hover i{
+        color: $whiteColor;
+    }
+}
+
+/*end style section scroll-to-top*/
+
+
+footer{
+    .Follow{
+        .bord-bot{
+            @media (max-width:575px){
+                top: 110px;
+            }
+        }
+    }
+}

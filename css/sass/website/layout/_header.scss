@@ -1,0 +1,232 @@
+.navbar-top{
+    background-color: $secondeColor;
+    overflow: hidden;
+    .header-left{
+        margin: 12px 0;
+        display: flex;
+        input{
+            border-radius: 20px;
+            border: none;
+            padding: 3px 8px;
+            font-size: 1.2rem;
+            width: 250px;
+            &::-webkit-input-placeholder{
+                color: $letterColor;
+                font-size: 1.2rem;
+            }
+            @media (max-width:576px) {
+                text-align: center;
+                margin: auto;
+            }
+        }
+        @media (max-width:576px) {
+            text-align: center;
+        }
+    }
+    .header-right{
+        margin: 8px 0;
+        .right{
+            margin-top: 7px;
+            span{
+                cursor: pointer;
+                font-size: 18px;
+                color: $letterColor;
+                @include perfixer(transition,all .3S ease-in-out,webkit moz o);
+                &:hover{
+                    color: $whiteColor;
+                }
+                
+            }
+            .lang{
+                display: none;
+                @include perfixer(transition,all .3S ease-in-out,webkit moz o);
+                &:hover{
+                    color: $whiteColor;
+                }
+                a{
+                    @extend %linker;
+                    margin-left: 10px;
+                }
+            }
+            @media (min-width:577px) and (max-width:766px) {
+                margin-left: -10px;
+                margin-right: 30px;
+            }
+        }
+        .log-out{  
+            margin-top: 7px;
+            i{
+                a{
+                    @extend %linker;   
+                }
+                @media (min-width:577px) and (max-width:766px) {
+                    width: 150px;
+                 }
+            }
+        }
+        @media (max-width:576px) {
+            text-align: center;
+        }
+    }
+}
+
+.navbar-bottom{
+    background-color: $whiteColor;
+    z-index: 9999;
+    .navbar-brand {
+        float: left;
+        width: 40%;
+        text-transform: uppercase;
+        margin-left: -15px;
+        font-weight:bold ;
+        margin-top: 5px;
+        display: flex;
+        span{
+            color: $mainColor; 
+        }
+    }
+    .navbar-toggler{
+        background-color: $mainColor;
+    }
+    .collapse{
+        justify-content: flex-end;
+        .navbar-nav{
+            .nav-item{
+                margin-right: 5px;
+                a{
+                    color: $secondeColor;
+                    font-weight:600;
+                    
+                    @include perfixer(transition,all .4S ease-in-out,webkit moz o);
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+                &.active a{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+.ahmed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    background-color:rgba($letterColor,.5);
+}
+
+header{
+    .carousel-indicators{
+        .active{
+            background-color: $mainColor;
+        }
+    }
+    .carousel-inner{
+        .carousel-item{
+            position: relative;
+            .overlay{
+                background-color: rgba(#000,0.5);
+                @include overlay;
+            }
+            img{
+                height: 83vh;
+                background-size: cover;
+            }
+            .carousel-caption{
+                position: absolute;
+                top: 170px;
+                left: 200px;
+                @media (min-width:767px)and(max-width:991px) {
+                    left: 150px;
+                }
+                @media (min-width:576px)and(max-width:766px) {
+                    left: 120px; 
+                }
+                h1{
+                    font-size: 70px;
+                    @media (min-width:767px)and(max-width:991px) {
+                        font-size: 50px; 
+                    }
+                    @media (min-width:576px)and(max-width:766px) {
+                        font-size: 30px; 
+                    }
+                    @media (max-width:575px) {
+                        display: none;
+                    }
+                    p{
+                        font-size: 70px; 
+                        margin-bottom: 0;
+                        @media (min-width:767px)and(max-width:991px) {
+                            font-size: 50px; 
+                        }
+                        @media (min-width:576px)and(max-width:766px) {
+                            font-size: 30px; 
+                        }
+                    }
+                    span{
+                            color: $mainColor;
+                            @media (min-width:767px)and(max-width:991px) {
+                                font-size: 50px; 
+                            }
+                            @media (min-width:576px)and(max-width:766px) {
+                                font-size: 30px; 
+                            }
+                    }
+                }
+                p{
+                    color: $whiteColor;
+                    font-size: 27px;
+                    @media (min-width:767px)and(max-width:991px) {
+                        font-size: 23px; 
+                    }
+                    @media (min-width:576px)and(max-width:766px) {
+                        font-size: 20px; 
+                    }
+                    @media (max-width:575px) {
+                        display: none;
+                    }
+                }
+                button{
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+                    color: $whiteColor;
+                    border-radius: 7px;
+                    width: 130px;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    @include perfixer(transition,all .5S ease-in-out,webkit moz o);
+                    &:hover{
+                        background-color: $whiteColor;
+                        color: $mainColor;
+                    }
+                    @media (max-width:564px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon{
+        background-color: $mainColor;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        font-size: 15px;
+        
+    }
+}
+
+%linker{
+    color:$letterColor;
+    text-decoration: none;
+    @include perfixer(transition,all .3S ease-in-out,webkit moz o);
+    &:hover{
+        color: $whiteColor;
+    }
+}
+

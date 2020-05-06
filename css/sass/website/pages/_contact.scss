@@ -1,0 +1,297 @@
+
+.head{
+    background:url(../images/image-overlay.jpg) no-repeat center center fixed;
+    min-height: 300px;
+    @include perfixer(background-size,cover,webkit moz);
+    position: relative;
+    .overlay{
+        background-color:rgba(#000000, .7) ;
+        @include overlay;
+    }
+
+    .breadcrumb{
+        position: relative;
+        z-index: 99;
+        background-color: transparent;
+        font-size: 30px;
+        top: 100px;
+        left: 20px;
+        li{
+            a{
+                color: $letterColor;
+                text-decoration: none;
+            }  
+            &.active a{
+                color: $mainColor;
+            } 
+        }
+    }
+}
+
+.contact{
+    padding: 40px 0;
+    h1{
+        font-size: 55px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $mainColor;
+        span{
+            color: $secondeColor;
+        }
+    }
+    .star{
+        font-weight: bold;
+        margin-left: -20px;
+        color: $mainColor;
+        font-size: 55px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 42%;
+            width: 61px;
+            height: 6px;
+            background-color: #253562;
+            @media (min-width:767px)and (max-width:991px) {
+                left: 38%;
+            }
+            @media (min-width:577px)and (max-width:766px) {
+                left: 34%;
+            }
+            @media (max-width:576px) {
+                left: 32%;
+            }
+            @media (max-width:400px) {
+                left: 24%;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 30px;
+            right: 42%;
+            width: 61px;
+            height: 6px;
+            background-color: #253562;
+            @media (min-width:766px)and (max-width:991px) {
+                right: 38%;
+            }
+            @media (min-width:577px)and (max-width:766px) {
+                right: 34%;
+            }
+            @media (max-width:576px) {
+                right: 32%;
+            }
+            @media (max-width:400px) {
+                right: 24%;
+            }
+        }
+    }
+    form{
+        .form-row{
+            .plce{
+                position: relative;
+                .placehold{
+                    margin-bottom: 40px;
+                    background-color: transparent;
+                }
+                .placehold:focus + .name,
+                .placehold:focus + .email,
+                .placehold:focus + .subject{
+                    position: absolute;
+                    font-size: 18px;
+                    top: -35px;
+                    left: 40px;
+                    color: $mainColor;
+                }
+                .name,.email,.subject{
+                    @include perfixer(transition,all .4s ease-in-out,webkit moz o);
+                    position: absolute;
+                    font-size: 22px;
+                    top: 5px;
+                    left: 20px;
+                    color: $letterColor;
+                    z-index: -1;
+                }
+            }
+            textarea{
+                height: 160px;
+                &::-webkit-input-placeholder{
+                    font-size: 22px;
+                    color: $letterColor;
+                }
+            }
+            button{
+                @include perfixer(transition,all .4s ease-in-out,webkit moz o);
+                margin-top: 20px;
+                background-color: $mainColor;
+                border:1px solid $mainColor;
+                &:hover{
+                    background-color: $whiteColor;
+                    color: $mainColor;
+                    border:1px solid $mainColor;
+                }
+            }
+        }
+    }
+}
+.map{
+    margin-bottom: -5px;
+    padding-top: 40px;
+    iframe{
+        width: 100%;
+        height: 500px;
+        border: none;
+    }
+}
+
+body{
+    position: relative;
+}
+
+.posit{
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    .spinner{
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        div{
+            position: absolute;
+            border-radius: 50%;
+       }
+        .one{
+            top: 150px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            border: 2px solid $mainColor;
+           @include perfixer(animation,top-down 2s ease-in-out infinite,webkit moz o);
+        }
+        .two{
+            top: 142px;
+            left: -8px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.1s ease-in-out infinite,webkit moz o);
+        }
+        .three{
+            top: 134px;
+            left: -15px;
+            width: 35px;
+            height: 35px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.2s ease-in-out infinite,webkit moz o);
+        }
+        .four{
+            top: 129px;
+            left: -20px;
+            width: 45px;
+            height: 45px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.3s ease-in-out infinite,webkit moz o);
+        }
+        .five{
+            top: 124px;
+            left: -25px;
+            width: 55px;
+            height: 55px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.4s ease-in-out infinite,webkit moz o);
+        }
+        .six{
+            top: 119px;
+            left: -30px;
+            width: 65px;
+            height: 65px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.5s ease-in-out infinite,webkit moz o);
+        }
+        .seven{
+            top: 114px;
+            left: -35px;
+            width: 75px;
+            height: 75px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.6s ease-in-out infinite,webkit moz o);
+        }
+        .eight{
+            top: 109px;
+            left: -40px;
+            width: 85px;
+            height: 85px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.7s ease-in-out infinite,webkit moz o);
+        }
+        .nigh{
+            top: 104px;
+            left: -45px;
+            width: 95px;
+            height: 95px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.8s ease-in-out infinite,webkit moz o);
+        }
+        .ten{
+            top: 99px;
+            left: -50px;
+            width: 105px;
+            height: 105px;
+            border: 2px solid $mainColor;
+            @include perfixer(animation,top-down 2s 0.9s ease-in-out infinite,webkit moz o);
+        }
+    }
+}
+
+@include keyfram(top-down){
+    0%{
+        top: 150px;
+    }
+    50%{
+        top: -100px;
+    }
+    100%{
+        top: 150px;
+    }
+
+}
+
+
+/*start style section scroll-to-top*/
+
+.scroll{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: $whiteColor;
+    border: 1px solid $mainColor;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    z-index: 99999;
+    cursor: pointer;
+    @include perfixer(transition,all .4S ease-in-out,webkit moz o);
+    i{
+        color: $mainColor;
+    }
+    &:hover{
+        background-color: $mainColor;
+        @include perfixer(box-shadow,(1px 1px 10px rgba($mainColor,0.5), -1px -1px 10px rgba($mainColor,0.7)),webkit moz o); 
+    }
+    &:hover i{
+        color: $whiteColor;
+    }
+}
+
+/*end style section scroll-to-top*/
